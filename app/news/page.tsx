@@ -4,6 +4,7 @@ import Pagenation from "@/app/_compornents/Pagenation";
 import SearchField from "@/app/_compornents/SearchField";
 import { NEWS_LIST_LIMIT } from "../_constants";
 
+export const revalidate = 0;
 export default async function Page() {
     const current = 1; // もしくは、動的に取得する
 
