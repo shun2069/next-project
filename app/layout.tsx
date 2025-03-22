@@ -4,15 +4,6 @@ import type {Metadata}from "next";
 import Header from "./_compornents/Header";
 import Footer from "./_compornents/Footer";
 
-// app/layout.tsx 例
-export const metaGAdata = {
-  title: 'あなたのサイト名',
-  description: 'サイトの説明',
-  other: {
-    'google-site-verification': 'e0IVfv1IsM9T7fpuVXEhZT5kwGS-BxQ2LzckhaaeSb8', // ←ここにコードを入れる
-  }
-};
-
 export const metadata: Metadata = {
   metadataBase: new URL('http://localhost:3007'),
   title: {
@@ -30,6 +21,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'http://localhost:3007',
   },
+  other: {
+    'google-site-verification': 'e0IVfv1IsM9T7fpuVXEhZT5kwGS-BxQ2LzckhaaeSb8',
+  }
 };
 
 export default function RootLayout({
